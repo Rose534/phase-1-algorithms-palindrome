@@ -1,6 +1,16 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let reversed = word.split("").reverse().join("");
+  if (reversed === word) {
+    return true;
+
+  }else {return false; }
+  
 }
+
+isPalindrome("abba")
+
+let result = isPalindrome("not a palindrome");
+console.log(result);
 
 /* 
   Add your pseudocode here
